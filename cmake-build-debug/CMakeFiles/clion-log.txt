@@ -1,4 +1,4 @@
-E:\IntelljC++\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\CPP_CLion
+E:\IntelljC++\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\zhiyu\Desktop\algo_practice
 -- Configuring done
 -- Generating done
--- Build files have been written to: E:/CPP_CLion/cmake-build-debug
+-- Build files have been written to: C:/Users/zhiyu/Desktop/algo_practice/cmake-build-debug

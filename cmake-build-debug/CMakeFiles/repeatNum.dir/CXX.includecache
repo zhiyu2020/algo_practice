@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/zhiyu/Desktop/algo_practice/jianzhioffer/03findRepeatNumber.cpp
+iostream
+-
+vector
+-
+unordered_map
+-
+sstream
+-
+algorithm
+-
+

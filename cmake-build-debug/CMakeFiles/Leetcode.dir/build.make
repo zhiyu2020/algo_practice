@@ -42,58 +42,58 @@ RM = E:\IntelljC++\CLion\bin\cmake\win\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\CPP_CLion
+CMAKE_SOURCE_DIR = C:\Users\zhiyu\Desktop\algo_practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\CPP_CLion\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug
 
 # Include any dependencies generated for this target.
-include CMakeFiles/Leetcode.dir/depend.make
+include CMakeFiles/leetcode.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/Leetcode.dir/progress.make
+include CMakeFiles/leetcode.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/Leetcode.dir/flags.make
+include CMakeFiles/leetcode.dir/flags.make
 
-CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.obj: CMakeFiles/Leetcode.dir/flags.make
-CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.obj: ../LeetcodeTop100.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CPP_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.obj"
-	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Leetcode.dir\LeetcodeTop100.cpp.obj -c E:\CPP_CLion\LeetcodeTop100.cpp
+CMakeFiles/leetcode.dir/leetcode/leetcode.cpp.obj: CMakeFiles/leetcode.dir/flags.make
+CMakeFiles/leetcode.dir/leetcode/leetcode.cpp.obj: ../leetcode/leetcode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/leetcode.dir/leetcode/leetcode.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\leetcode.dir\leetcode\leetcode.cpp.obj -c C:\Users\zhiyu\Desktop\algo_practice\leetcode\leetcode.cpp
 
-CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CPP_CLion\LeetcodeTop100.cpp > CMakeFiles\Leetcode.dir\LeetcodeTop100.cpp.i
+CMakeFiles/leetcode.dir/leetcode/leetcode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode.dir/leetcode/leetcode.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\zhiyu\Desktop\algo_practice\leetcode\leetcode.cpp > CMakeFiles\leetcode.dir\leetcode\leetcode.cpp.i
 
-CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CPP_CLion\LeetcodeTop100.cpp -o CMakeFiles\Leetcode.dir\LeetcodeTop100.cpp.s
+CMakeFiles/leetcode.dir/leetcode/leetcode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode.dir/leetcode/leetcode.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\zhiyu\Desktop\algo_practice\leetcode\leetcode.cpp -o CMakeFiles\leetcode.dir\leetcode\leetcode.cpp.s
 
-# Object files for target Leetcode
-Leetcode_OBJECTS = \
-"CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.obj"
+# Object files for target leetcode
+leetcode_OBJECTS = \
+"CMakeFiles/leetcode.dir/leetcode/leetcode.cpp.obj"
 
-# External object files for target Leetcode
-Leetcode_EXTERNAL_OBJECTS =
+# External object files for target leetcode
+leetcode_EXTERNAL_OBJECTS =
 
-Leetcode.exe: CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.obj
-Leetcode.exe: CMakeFiles/Leetcode.dir/build.make
-Leetcode.exe: CMakeFiles/Leetcode.dir/linklibs.rsp
-Leetcode.exe: CMakeFiles/Leetcode.dir/objects1.rsp
-Leetcode.exe: CMakeFiles/Leetcode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\CPP_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Leetcode.exe"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Leetcode.dir\link.txt --verbose=$(VERBOSE)
+leetcode.exe: CMakeFiles/leetcode.dir/leetcode/leetcode.cpp.obj
+leetcode.exe: CMakeFiles/leetcode.dir/build.make
+leetcode.exe: CMakeFiles/leetcode.dir/linklibs.rsp
+leetcode.exe: CMakeFiles/leetcode.dir/objects1.rsp
+leetcode.exe: CMakeFiles/leetcode.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable leetcode.exe"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\leetcode.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Leetcode.dir/build: Leetcode.exe
+CMakeFiles/leetcode.dir/build: leetcode.exe
 
-.PHONY : CMakeFiles/Leetcode.dir/build
+.PHONY : CMakeFiles/leetcode.dir/build
 
-CMakeFiles/Leetcode.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles\Leetcode.dir\cmake_clean.cmake
-.PHONY : CMakeFiles/Leetcode.dir/clean
+CMakeFiles/leetcode.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles\leetcode.dir\cmake_clean.cmake
+.PHONY : CMakeFiles/leetcode.dir/clean
 
-CMakeFiles/Leetcode.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\CPP_CLion E:\CPP_CLion E:\CPP_CLion\cmake-build-debug E:\CPP_CLion\cmake-build-debug E:\CPP_CLion\cmake-build-debug\CMakeFiles\Leetcode.dir\DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/Leetcode.dir/depend
+CMakeFiles/leetcode.dir/depend:
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\zhiyu\Desktop\algo_practice C:\Users\zhiyu\Desktop\algo_practice C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug\CMakeFiles\leetcode.dir\DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/leetcode.dir/depend
 

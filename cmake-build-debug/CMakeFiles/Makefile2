@@ -43,27 +43,21 @@ RM = E:\IntelljC++\CLion\bin\cmake\win\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\CPP_CLion
+CMAKE_SOURCE_DIR = C:\Users\zhiyu\Desktop\algo_practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\CPP_CLion\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/SHANGTANG.dir/all
-all: CMakeFiles/CPP_CLion.dir/all
-all: CMakeFiles/HUAWEI1.dir/all
-all: CMakeFiles/Leetcode.dir/all
+all: CMakeFiles/main.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/SHANGTANG.dir/clean
-clean: CMakeFiles/CPP_CLion.dir/clean
-clean: CMakeFiles/HUAWEI1.dir/clean
-clean: CMakeFiles/Leetcode.dir/clean
+clean: CMakeFiles/main.dir/clean
 
 .PHONY : clean
 
@@ -73,112 +67,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/SHANGTANG.dir
+# Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/SHANGTANG.dir/all:
-	$(MAKE) -f CMakeFiles\SHANGTANG.dir\build.make CMakeFiles/SHANGTANG.dir/depend
-	$(MAKE) -f CMakeFiles\SHANGTANG.dir\build.make CMakeFiles/SHANGTANG.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\CPP_CLion\cmake-build-debug\CMakeFiles --progress-num=8,9 "Built target SHANGTANG"
-.PHONY : CMakeFiles/SHANGTANG.dir/all
+CMakeFiles/main.dir/all:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/depend
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SHANGTANG.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CPP_CLion\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/SHANGTANG.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CPP_CLion\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/SHANGTANG.dir/rule
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-SHANGTANG: CMakeFiles/SHANGTANG.dir/rule
+main: CMakeFiles/main.dir/rule
 
-.PHONY : SHANGTANG
-
-# clean rule for target.
-CMakeFiles/SHANGTANG.dir/clean:
-	$(MAKE) -f CMakeFiles\SHANGTANG.dir\build.make CMakeFiles/SHANGTANG.dir/clean
-.PHONY : CMakeFiles/SHANGTANG.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/CPP_CLion.dir
-
-# All Build rule for target.
-CMakeFiles/CPP_CLion.dir/all:
-	$(MAKE) -f CMakeFiles\CPP_CLion.dir\build.make CMakeFiles/CPP_CLion.dir/depend
-	$(MAKE) -f CMakeFiles\CPP_CLion.dir\build.make CMakeFiles/CPP_CLion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\CPP_CLion\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target CPP_CLion"
-.PHONY : CMakeFiles/CPP_CLion.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/CPP_CLion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CPP_CLion\cmake-build-debug\CMakeFiles 3
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/CPP_CLion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CPP_CLion\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/CPP_CLion.dir/rule
-
-# Convenience name for target.
-CPP_CLion: CMakeFiles/CPP_CLion.dir/rule
-
-.PHONY : CPP_CLion
+.PHONY : main
 
 # clean rule for target.
-CMakeFiles/CPP_CLion.dir/clean:
-	$(MAKE) -f CMakeFiles\CPP_CLion.dir\build.make CMakeFiles/CPP_CLion.dir/clean
-.PHONY : CMakeFiles/CPP_CLion.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/HUAWEI1.dir
-
-# All Build rule for target.
-CMakeFiles/HUAWEI1.dir/all:
-	$(MAKE) -f CMakeFiles\HUAWEI1.dir\build.make CMakeFiles/HUAWEI1.dir/depend
-	$(MAKE) -f CMakeFiles\HUAWEI1.dir\build.make CMakeFiles/HUAWEI1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\CPP_CLion\cmake-build-debug\CMakeFiles --progress-num=4,5 "Built target HUAWEI1"
-.PHONY : CMakeFiles/HUAWEI1.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/HUAWEI1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CPP_CLion\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/HUAWEI1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CPP_CLion\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/HUAWEI1.dir/rule
-
-# Convenience name for target.
-HUAWEI1: CMakeFiles/HUAWEI1.dir/rule
-
-.PHONY : HUAWEI1
-
-# clean rule for target.
-CMakeFiles/HUAWEI1.dir/clean:
-	$(MAKE) -f CMakeFiles\HUAWEI1.dir\build.make CMakeFiles/HUAWEI1.dir/clean
-.PHONY : CMakeFiles/HUAWEI1.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/Leetcode.dir
-
-# All Build rule for target.
-CMakeFiles/Leetcode.dir/all:
-	$(MAKE) -f CMakeFiles\Leetcode.dir\build.make CMakeFiles/Leetcode.dir/depend
-	$(MAKE) -f CMakeFiles\Leetcode.dir\build.make CMakeFiles/Leetcode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\CPP_CLion\cmake-build-debug\CMakeFiles --progress-num=6,7 "Built target Leetcode"
-.PHONY : CMakeFiles/Leetcode.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Leetcode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CPP_CLion\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Leetcode.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CPP_CLion\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/Leetcode.dir/rule
-
-# Convenience name for target.
-Leetcode: CMakeFiles/Leetcode.dir/rule
-
-.PHONY : Leetcode
-
-# clean rule for target.
-CMakeFiles/Leetcode.dir/clean:
-	$(MAKE) -f CMakeFiles\Leetcode.dir\build.make CMakeFiles/Leetcode.dir/clean
-.PHONY : CMakeFiles/Leetcode.dir/clean
+CMakeFiles/main.dir/clean:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

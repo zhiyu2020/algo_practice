@@ -47,10 +47,10 @@ RM = E:\IntelljC++\CLion\bin\cmake\win\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\CPP_CLion
+CMAKE_SOURCE_DIR = C:\Users\zhiyu\Desktop\algo_practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\CPP_CLion\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CPP_CLion\cmake-build-debug\CMakeFiles E:\CPP_CLion\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug\CMakeFiles C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CPP_CLion\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\zhiyu\Desktop\algo_practice\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,110 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SHANGTANG
+# Target rules for targets named main
 
 # Build rule for target.
-SHANGTANG: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 SHANGTANG
-.PHONY : SHANGTANG
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-SHANGTANG/fast:
-	$(MAKE) -f CMakeFiles\SHANGTANG.dir\build.make CMakeFiles/SHANGTANG.dir/build
-.PHONY : SHANGTANG/fast
-
-#=============================================================================
-# Target rules for targets named CPP_CLion
-
-# Build rule for target.
-CPP_CLion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 CPP_CLion
-.PHONY : CPP_CLion
-
-# fast build rule for target.
-CPP_CLion/fast:
-	$(MAKE) -f CMakeFiles\CPP_CLion.dir\build.make CMakeFiles/CPP_CLion.dir/build
-.PHONY : CPP_CLion/fast
-
-#=============================================================================
-# Target rules for targets named HUAWEI1
-
-# Build rule for target.
-HUAWEI1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 HUAWEI1
-.PHONY : HUAWEI1
-
-# fast build rule for target.
-HUAWEI1/fast:
-	$(MAKE) -f CMakeFiles\HUAWEI1.dir\build.make CMakeFiles/HUAWEI1.dir/build
-.PHONY : HUAWEI1/fast
-
-#=============================================================================
-# Target rules for targets named Leetcode
-
-# Build rule for target.
-Leetcode: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Leetcode
-.PHONY : Leetcode
-
-# fast build rule for target.
-Leetcode/fast:
-	$(MAKE) -f CMakeFiles\Leetcode.dir\build.make CMakeFiles/Leetcode.dir/build
-.PHONY : Leetcode/fast
-
-HUAWEIOJ1.obj: HUAWEIOJ1.cpp.obj
-
-.PHONY : HUAWEIOJ1.obj
-
-# target to build an object file
-HUAWEIOJ1.cpp.obj:
-	$(MAKE) -f CMakeFiles\HUAWEI1.dir\build.make CMakeFiles/HUAWEI1.dir/HUAWEIOJ1.cpp.obj
-.PHONY : HUAWEIOJ1.cpp.obj
-
-HUAWEIOJ1.i: HUAWEIOJ1.cpp.i
-
-.PHONY : HUAWEIOJ1.i
-
-# target to preprocess a source file
-HUAWEIOJ1.cpp.i:
-	$(MAKE) -f CMakeFiles\HUAWEI1.dir\build.make CMakeFiles/HUAWEI1.dir/HUAWEIOJ1.cpp.i
-.PHONY : HUAWEIOJ1.cpp.i
-
-HUAWEIOJ1.s: HUAWEIOJ1.cpp.s
-
-.PHONY : HUAWEIOJ1.s
-
-# target to generate assembly for a file
-HUAWEIOJ1.cpp.s:
-	$(MAKE) -f CMakeFiles\HUAWEI1.dir\build.make CMakeFiles/HUAWEI1.dir/HUAWEIOJ1.cpp.s
-.PHONY : HUAWEIOJ1.cpp.s
-
-LeetcodeTop100.obj: LeetcodeTop100.cpp.obj
-
-.PHONY : LeetcodeTop100.obj
-
-# target to build an object file
-LeetcodeTop100.cpp.obj:
-	$(MAKE) -f CMakeFiles\Leetcode.dir\build.make CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.obj
-.PHONY : LeetcodeTop100.cpp.obj
-
-LeetcodeTop100.i: LeetcodeTop100.cpp.i
-
-.PHONY : LeetcodeTop100.i
-
-# target to preprocess a source file
-LeetcodeTop100.cpp.i:
-	$(MAKE) -f CMakeFiles\Leetcode.dir\build.make CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.i
-.PHONY : LeetcodeTop100.cpp.i
-
-LeetcodeTop100.s: LeetcodeTop100.cpp.s
-
-.PHONY : LeetcodeTop100.s
-
-# target to generate assembly for a file
-LeetcodeTop100.cpp.s:
-	$(MAKE) -f CMakeFiles\Leetcode.dir\build.make CMakeFiles/Leetcode.dir/LeetcodeTop100.cpp.s
-.PHONY : LeetcodeTop100.cpp.s
+main/fast:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 main.obj: main.cpp.obj
 
@@ -221,7 +128,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\CPP_CLion.dir\build.make CMakeFiles/CPP_CLion.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -230,7 +137,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\CPP_CLion.dir\build.make CMakeFiles/CPP_CLion.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -239,38 +146,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\CPP_CLion.dir\build.make CMakeFiles/CPP_CLion.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-shangtang.obj: shangtang.cpp.obj
-
-.PHONY : shangtang.obj
-
-# target to build an object file
-shangtang.cpp.obj:
-	$(MAKE) -f CMakeFiles\SHANGTANG.dir\build.make CMakeFiles/SHANGTANG.dir/shangtang.cpp.obj
-	$(MAKE) -f CMakeFiles\CPP_CLion.dir\build.make CMakeFiles/CPP_CLion.dir/shangtang.cpp.obj
-.PHONY : shangtang.cpp.obj
-
-shangtang.i: shangtang.cpp.i
-
-.PHONY : shangtang.i
-
-# target to preprocess a source file
-shangtang.cpp.i:
-	$(MAKE) -f CMakeFiles\SHANGTANG.dir\build.make CMakeFiles/SHANGTANG.dir/shangtang.cpp.i
-	$(MAKE) -f CMakeFiles\CPP_CLion.dir\build.make CMakeFiles/CPP_CLion.dir/shangtang.cpp.i
-.PHONY : shangtang.cpp.i
-
-shangtang.s: shangtang.cpp.s
-
-.PHONY : shangtang.s
-
-# target to generate assembly for a file
-shangtang.cpp.s:
-	$(MAKE) -f CMakeFiles\SHANGTANG.dir\build.make CMakeFiles/SHANGTANG.dir/shangtang.cpp.s
-	$(MAKE) -f CMakeFiles\CPP_CLion.dir\build.make CMakeFiles/CPP_CLion.dir/shangtang.cpp.s
-.PHONY : shangtang.cpp.s
 
 # Help Target
 help:
@@ -278,24 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... SHANGTANG
-	@echo ... CPP_CLion
-	@echo ... HUAWEI1
-	@echo ... Leetcode
 	@echo ... edit_cache
+	@echo ... main
 	@echo ... rebuild_cache
-	@echo ... HUAWEIOJ1.obj
-	@echo ... HUAWEIOJ1.i
-	@echo ... HUAWEIOJ1.s
-	@echo ... LeetcodeTop100.obj
-	@echo ... LeetcodeTop100.i
-	@echo ... LeetcodeTop100.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... shangtang.obj
-	@echo ... shangtang.i
-	@echo ... shangtang.s
 .PHONY : help
 
 

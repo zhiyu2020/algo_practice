@@ -53,8 +53,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/SHANGTANG.dir/DependInfo.cmake"
-  "CMakeFiles/CPP_CLion.dir/DependInfo.cmake"
-  "CMakeFiles/HUAWEI1.dir/DependInfo.cmake"
-  "CMakeFiles/Leetcode.dir/DependInfo.cmake"
+  "CMakeFiles/main.dir/DependInfo.cmake"
   )
