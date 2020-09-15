@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CPP_CLion/HUAWEIOJ1.cpp
+iostream
+-
+vector
+-
+sstream
+-
+algorithm
+-
+unordered_map
+-
+
