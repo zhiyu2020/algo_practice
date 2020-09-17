@@ -1,8 +1,4 @@
 //
-// Created by zhiyu on 2020/9/15.
-//
-
-//
 // Created by zhiyu on 2020/9/14.
 //
 // input: [2,3,1,0,2,5,3]

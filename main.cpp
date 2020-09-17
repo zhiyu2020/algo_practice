@@ -3,64 +3,65 @@
 #include <algorithm>
 #include <sstream>
 #include <string>
+#include <stack>
 using namespace std;
+// 从尾到头打印链表
+// input head = [1, 3, 2]
+// output [2, 3, 1]
 
-// description:
-// n * m 二维数组中 每一行按照从左到右递增顺序排序  每一列从上到下递增顺序排序
-// 请完成一个函数 输入这样的一个二维数组和一个整数 判断数组是否含有该整数
+struct ListNode {
+    int val;
+    ListNode* next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
 
-//exp:
-/*
-[
-[1,   4,  7, 11, 15],
-[2,   5,  8, 12, 19],
-[3,   6,  9, 16, 22],
-[10, 13, 14, 17, 24],
-[18, 21, 23, 26, 30]
-]
-*/
-// target=5 true
-// target=20 false
-
-// 二分查找法
-//从matrix左下角元素开始遍历 与目标值对比:
-//  matrix[i][j] > target i--
-//  matrix[i][j] < target j++
-//  matrix[i][j] = target true
-
-//else return false
-// O(M + N) O(1)
+// 法一 辅助栈法
 class Solution {
 public:
-    bool  findNumberIn2DArray(vector<vector<int>>& matrix, int target) {
-        int rows = matrix.size() - 1, cols = 0;
-        while (rows >= 0 && cols < matrix[0].size()) {
-            if (matrix[rows][cols] > target) rows--;
-            else if (matrix[rows][cols] < target) cols++;
-            else return true;
+    vector<int> reversePrint(ListNode* head) {
+        stack<int> resStack;
+        ListNode* tmp = head;
+        while (tmp) {
+            resStack.push(tmp->val);
+            tmp = tmp->next;
         }
-        return false;
+        int len = resStack.size();
+        vector<int> res(len);
+        while (len) {
+            res.push_back(resStack.top());
+            resStack.pop();
+            len--;
+        }
+        return res;
+    }
+};
+// 法二 库函数:
+//
+class Solution2 {
+public:
+    vector<int> reversePrint(ListNode* head) {
+        vector<int> res;
+        while (head) {
+            res.insert(res.begin(), head->val);
+            head = head->next;
+        }
+        return res;
     }
 };
 
+// 法三:
+
 int main() {
     Solution solv;
-    int M, N;
-    cout << "input rows & cols num:" << endl;
-    cin >> M >> N;
-    string strLine, tmp;
-    vector<vector<int>> matrix(M, vector<int>(N));
-    int target;
-    cout << "input the target:" << endl;
-    cin >> target;
-    cout << "input the matrix please." << endl;
-    for (int i = 0; i < M; i++) {
-        getline(cin, strLine);// input cols include ','
-        stringstream stream(strLine);
-        while (getline(stream, tmp, ',')) {
-            int matrixElementRow = atoi(tmp.c_str());
-            matrix[i].push_back(matrixElementRow);
-        }
+    string ss, data;
+    ListNode head(1);
+    ListNode second(3), thrid(2);
+    head.next = &second;
+    head.next->next = &thrid;
+    head.next->next->next = NULL;
+    vector<int> res = solv.reversePrint(&head);
+    for (auto i : res) {
+        cout << i << ' ';
     }
-    cout << "target is in matrix:" << solv.findNumberIn2DArray(matrix,target);
+    stringstream stream(ss);
 }
