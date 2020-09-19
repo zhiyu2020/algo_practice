@@ -6,7 +6,7 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
-// https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/solution/mian-shi-ti-11-xuan-zhuan-shu-zu-de-zui-xiao-shu-3/
+
 // 旋转数组最小数字
 // input: [3, 4, 5, 1, 2]
 // output: 1
@@ -71,17 +71,16 @@ public:
 
 int main() {
     string str, data;
-    vector<int> saveNumbers;
     Solution solv;
-    getline(cin, str);
-    stringstream ss(str);
-    while (getline(ss, data, ',')) {
-        int intVal = atoi(data.c_str());
-        saveNumbers.push_back(intVal);
+    while (getline(cin, str)) {
+        vector<int> saveNumbers;
+        stringstream ss(str);
+        while (getline(ss, data, ',')) {
+            int intVal = atoi(data.c_str());
+            saveNumbers.push_back(intVal);
+        }
+        cout << solv.minArray(saveNumbers) << endl;
     }
-
-    cout << solv.minArray(saveNumbers) << endl;
     return 0;
 }
-
 

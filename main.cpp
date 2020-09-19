@@ -71,16 +71,16 @@ public:
 
 int main() {
     string str, data;
-    vector<int> saveNumbers;
     Solution solv;
-    getline(cin, str);
-    stringstream ss(str);
-    while (getline(ss, data, ',')) {
-        int intVal = atoi(data.c_str());
-        saveNumbers.push_back(intVal);
+    while (getline(cin, str)) {
+        vector<int> saveNumbers;
+        stringstream ss(str);
+        while (getline(ss, data, ',')) {
+            int intVal = atoi(data.c_str());
+            saveNumbers.push_back(intVal);
+        }
+        cout << solv.minArray(saveNumbers) << endl;
     }
-
-    cout << solv.minArray(saveNumbers) << endl;
     return 0;
 }
 
