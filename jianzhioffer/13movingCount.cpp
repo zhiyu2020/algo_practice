@@ -27,6 +27,18 @@ using namespace std;
 // DFS 通过递归，先朝一个方向搜到底，再回溯至上个节点，沿另一个方向搜索，以此类推。
 
 // O(MN) O(MN)
+
+// def recursion(level, par1, par2,...):
+//      # recursion terminator
+//      if level > MAX_VAL
+//          process_result
+//          return
+//      #process logic in current level
+//      process(level, data...)
+//      #drill down
+//      self.recursion(level + 1, p1...)
+//      # reverse the current level status if needed
+
 class Solution {
 public:
     int movingCount(int m, int n, int k) {
@@ -99,6 +111,16 @@ public:
     }
 };
 
+// def BFS(graph, start, end):
+//    queue = []
+//    queue.append([start])
+//    visited.add(start)
+//    while queue:
+//      node = queue.pop()
+//      visited.add(node)
+//      process(node)
+//      nodes = generated_related_nodes(node)
+//      queue.push(node)
 
 
 int main() {
