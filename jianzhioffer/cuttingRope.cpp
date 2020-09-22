@@ -76,6 +76,36 @@ public:
         return dp[n];
     }
 };
+// 题目二: 大数越界下求余数
+// 题目要求:
+//  答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。
+class Solution3 {
+public:
+    int cuttingRope(int n) {
+        if (n <= 3) return n - 1;
+        int p = 1000000007;
+        int quioent = n / 3;
+        int rest = n % 3;
+        if (rest == 0) return pow1(3, quioent, p, 1);
+        else if (rest == 1) return pow1(3, quioent - 1, p, 4);
+        else return pow1(3,quioent,p,2);
+    }
+
+
+    long long pow1(long long a,long long n,long long mod,int mul){
+        long long res = 1;
+        while(n > 0){
+            if(n&1)
+                res = (res * a)%mod;
+            a = (a * a)%mod;
+            n >>= 1;
+        }
+        res = (res*mul)%mod;
+        return (int)(res);
+    }
+};
+
+
 
 int main() {
     int m, n, k;
